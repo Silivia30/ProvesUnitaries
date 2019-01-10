@@ -34,8 +34,7 @@ public class DigitalSignatureTest {
         byte[] bytes = new byte[10];
         DigitalSignature printExample = new DigitalSignature(bytes);
 
-        String expected = "DigitalSignature{" + "key='" + bytes.toString() + '\'' + '}';
-        assertEquals(expected, printExample.toString());
+        assertEquals(bytes, printExample.getDigitalSignature());
     }
 
 
