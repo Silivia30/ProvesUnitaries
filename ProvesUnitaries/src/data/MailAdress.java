@@ -7,7 +7,7 @@ package data;
 
 /**
  *
- * @author user
+ * @author sbp5
  */
 final public class MailAdress {
     private final String mail;
