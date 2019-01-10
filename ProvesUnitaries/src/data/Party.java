@@ -12,7 +12,13 @@ package data;
 final public class Party {
     private final String name;
     
-    public Party(String name) { this.name = name; }
+    public Party(String name) throws Exception { 
+        if(name!=null){
+            this.name = name;
+        }else{
+            throw new Exception("Invalid name on Party().");
+        } 
+    }
     
     public String getName() { return this.name; }
     

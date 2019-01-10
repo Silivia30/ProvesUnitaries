@@ -12,7 +12,19 @@ package data;
 final public class MailAdress {
     private final String mail;
     
-    public MailAdress(String mail){this.mail = mail;}
+    public MailAdress(String mail) throws Exception{
+        if(isValid(mail)){this.mail = mail;}
+        else{
+            throw new Exception("Invalid mail adress on MailAdress().");
+        }
+    }
+    
+    private boolean isValid(String mail){ //found on StackOverflow https://stackoverflow.com/questions/624581/what-is-the-best-java-email-address-validation-method
+           String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
+           java.util.regex.Pattern p = java.util.regex.Pattern.compile(ePattern);
+           java.util.regex.Matcher m = p.matcher(mail);
+           return m.matches();
+    }
     
     public String getMailAdress(){return this.mail;}
 
