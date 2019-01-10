@@ -20,7 +20,7 @@ public class VoteCounter {
     }
 
     public void scrutinize(Party party) {
-        if (party == null || !parties.containsKey(party)){this.countNull();}
+        if (party.getName().equals("null")){this.countNull();}
         else if(party.getName().equals("")){this.countBlank();}
         else{this.countParty(party);}
     }
