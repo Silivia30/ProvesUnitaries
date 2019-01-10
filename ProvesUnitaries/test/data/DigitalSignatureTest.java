@@ -37,7 +37,6 @@ public class DigitalSignatureTest {
         assertEquals(bytes, printExample.getDigitalSignature());
     }
 
-
     @After
     public void teardown(){
 
