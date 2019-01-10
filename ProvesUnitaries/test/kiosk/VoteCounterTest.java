@@ -1,9 +1,8 @@
-package data;
-
+package kiosk;
 
 import org.junit.*;
 
-public class DigitalSignatureTest {
+public class VoteCounterTest {
 
     @BeforeClass
     public static void setupAll(){
@@ -29,6 +28,5 @@ public class DigitalSignatureTest {
     public static void teardownAll(){
 
     }
-
 
 }
