@@ -7,7 +7,7 @@ package data;
 
 /**
  *
- * @author user
+ * @author sbp5
  */
 final public class DigitalSignature {
     private final String signature;
