@@ -22,12 +22,8 @@ public class VotingKiosk {
     public void setMailerService(MailerService mService){ this.mailerService = mService; }
 
     public void vote(Party party) {
-        try{
-            this.voteCounter.scrutinize(party);
-            this.votedParty = party;
-        }catch(Exception e){
-            System.out.println("Error, voting an invalid party");
-        }
+        this.voteCounter.scrutinize(party);
+        this.votedParty = party;
     }
 
     public void sendeReceipt(MailAddress address) {

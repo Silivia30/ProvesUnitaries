@@ -8,7 +8,7 @@ import data.Party;
 public class VoteCounter {
 
     //CONTROL WHAT IF TRY TO VOTE A NOT EXISTENT PARTY
-    public void scrutinize(Party party) throws Exception {
+    public void scrutinize(Party party) {
     }
     /*
     ???
