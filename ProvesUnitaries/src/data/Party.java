@@ -13,7 +13,11 @@ final public class Party {
     private final String name;
     
     public Party(String name){
-        this.name = name;
+        if(name != null){
+            this.name = name;
+        }else{
+            this.name = "";
+        }
     }
     
     public String getName() { return this.name; }
