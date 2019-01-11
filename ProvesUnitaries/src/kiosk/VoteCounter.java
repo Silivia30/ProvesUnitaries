@@ -9,7 +9,7 @@ import java.util.*;
 */
 public class VoteCounter {
 
-    private Map<Party, Integer> parties;
+    private Map<Party, Integer> parties = new HashMap<>();
     private int null_votes = 0;
     private int blank_votes = 0;
 
