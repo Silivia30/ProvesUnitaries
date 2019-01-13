@@ -8,16 +8,6 @@ import static org.junit.Assert.assertNotNull;
 
 public class DigitalSignatureTest {
 
-    @BeforeClass
-    public static void setupAll(){
-
-    }
-
-    @Before
-    public void setup(){
-
-    }
-
     @Test (expected = Exception.class)
     public void testNullException() throws Exception{
         DigitalSignature nullExample = new DigitalSignature(null);
@@ -36,16 +26,5 @@ public class DigitalSignatureTest {
 
         assertEquals(bytes, printExample.getDigitalSignature());
     }
-
-    @After
-    public void teardown(){
-
-    }
-
-    @AfterClass
-    public static void teardownAll(){
-
-    }
-
 
 }

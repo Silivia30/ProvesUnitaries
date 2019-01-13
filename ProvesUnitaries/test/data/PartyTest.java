@@ -6,16 +6,6 @@ import static org.junit.Assert.assertEquals;
 
 public class PartyTest {
 
-    @BeforeClass
-    public static void setupAll(){
-
-    }
-
-    @Before
-    public void setup(){
-
-    }
-
     @Test
     public void testNullParty() throws Exception{
         String expected = "";
@@ -35,16 +25,6 @@ public class PartyTest {
         String expected = "";
         Party partyEmptyName = new Party("");
         assertEquals(expected, partyEmptyName.getName());
-    }
-
-    @After
-    public void teardown(){
-
-    }
-
-    @AfterClass
-    public static void teardownAll(){
-
     }
 
 }

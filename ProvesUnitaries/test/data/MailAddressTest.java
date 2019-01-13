@@ -7,16 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 public class MailAddressTest {
 
-    @BeforeClass
-    public static void setupAll(){
-
-    }
-
-    @Before
-    public void setup(){
-
-    }
-
     @Test (expected = Exception.class)
     public void testNullException() throws Exception{
         MailAddress nullExample = new MailAddress("");
@@ -34,14 +24,5 @@ public class MailAddressTest {
         MailAddress incorrectMail = new MailAddress("incorrect.@@.mail.com");
     }
 
-    @After
-    public void teardown(){
-
-    }
-
-    @AfterClass
-    public static void teardownAll(){
-
-    }
 
 }

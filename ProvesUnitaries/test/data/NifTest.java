@@ -6,15 +6,6 @@ import static org.junit.Assert.assertEquals;
 
 public class NifTest {
 
-    @BeforeClass
-    public static void setupAll(){
-
-    }
-
-    @Before
-    public void setup(){
-
-    }
 
     @Test (expected = Exception.class)
     public void testNullException() throws Exception{
@@ -42,14 +33,5 @@ public class NifTest {
         Nif invalidExample = new Nif("C12312312");
     }
 
-    @After
-    public void teardown(){
-
-    }
-
-    @AfterClass
-    public static void teardownAll(){
-
-    }
 
 }

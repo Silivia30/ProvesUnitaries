@@ -13,11 +13,6 @@ public class VoteCounterTest {
     private VoteCounter example;
     private Party test;
 
-    @BeforeClass
-    public static void setupAll(){
-
-    }
-
     @Before
     public void setup(){
         Set<Party> parties = new HashSet<>();
@@ -75,16 +70,6 @@ public class VoteCounterTest {
 
 
         assertEquals(3, example.getTotal());
-    }
-
-    @After
-    public void teardown(){
-
-    }
-
-    @AfterClass
-    public static void teardownAll(){
-
     }
 
 }
